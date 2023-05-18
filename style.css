@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Ysabeau&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Ysabeau:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Ysabeau:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(70, 17, 46);
+    color: rgb(255, 255, 255);
+    height: 65px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 10vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
+    background-color: rgb(228, 160, 255);
+}
+
+.info{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.gameInfo{
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imgBox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset {
+    margin: 25px 25px;
+    padding: 5px 20px;
+    background-color: rgb(224, 202, 245);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+}
+
+.line{
+    background-color: rgb(0, 0, 0);
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color:rgb(70, 17, 46);
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 640px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+}
